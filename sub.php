@@ -45,7 +45,7 @@
 		$string = file_get_contents("php://input");
 		
 		//ファイル保存とか
-		$fp = fopen(date('YmdHis') . "_atom" . ".xml", "w");
+		$fp = fopen("../data/" . date('YmdHis') . "_atom" . ".xml", "w");
 		fwrite($fp, $string);
 		fclose($fp);
 		
@@ -81,7 +81,7 @@
 		//echo mb_convert_encoding($buf . "<br>\n", "SJIS", "UTF-8");
 		
 		//ログファイルへ出力
-		$fp = fopen("log.txt", "a+");
+		$fp = fopen("../logs/log.txt", "a+");
 		fputs($fp, $buf. "\n");
 		fclose($fp);
 	}
