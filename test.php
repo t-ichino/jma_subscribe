@@ -1,4 +1,5 @@
 <?php
+include("vendor/pubsubhubbub/subscriber/src/Subscriber.php");
 use \Pubsubhubbub\Subscriber\Subscriber;
 
 $hub_url = "http://pubsubhubbub.appspot.com";

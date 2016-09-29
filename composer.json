@@ -1,0 +1,21 @@
+{
+    "name": "jma_subscribe",
+    "type": "library",
+    "description": "test.",
+    "keywords": ["pubsubhubbub", "subscribers", "data", "feeds"],
+    "homepage": "https://github.com/t-ichino/jma_subscribe",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "t-ichino",
+            "homepage": "https://github.com/t-ichino/jma_subscribe"
+        }
+    ],
+    "require": {
+        "php": "~5.4 || ~7.0",
+        "pubsubhubbub/subscriber": "*"
+    },
+    "autoload": {
+        "psr-4": { "Pubsubhubbub\\Subscriber\\": "src/" }
+    }
+}
